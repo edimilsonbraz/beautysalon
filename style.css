@@ -645,6 +645,7 @@ footer .social a:hover {
     padding-left: 3rem;
     padding-right: 3rem;
   }
+
   /* TESTIMONIALS */
   #testimonials .container {
     margin-left: auto;
@@ -683,7 +684,8 @@ footer .social a:hover {
 
 
 }
-/* large devices: 1023 > */
+/* large devices: 1024 > */
+
 /* large devices: 992 > */
 @media (min-width: 992px) {
   :root {
@@ -694,4 +696,27 @@ footer .social a:hover {
 
 
 /* medium devices: 767 > */
-
+@media (min-width: 767px) {
+    /* NAVIGATION */
+    nav .menu {
+      opacity: 1;
+      visibility: visible;
+      top: 0;
+    }
+    nav .menu ul {
+      display: flex;
+      gap: 2rem;
+    }
+    nav .menu ul li a.title {
+      font: 500 1rem var(--body-font);
+      -webkit-font-smoothing: antialiased;
+    }
+    nav .menu ul li a.title.active {
+      font-weight: bold;
+      -webkit-font-smoothing: auto;
+  
+    }
+    nav .icon-menu {
+      display: none;
+    }
+}
